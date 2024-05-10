@@ -1,8 +1,4 @@
-// import Head from "next/head";
 import Link from "next/link";
-
-// 1. import `NextUIProvider` component
-
 import Image from "next/image";
 import Counter from "../app/components/Counter";
 import Carousel from "../app/components/carousel/carousel";
@@ -19,8 +15,18 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
-
 import MerylLoungeChairTeal from "../../public/images/MerylLoungeChairTeal.png";
+import item1 from "../../public/images/carouselSlides/item-1.svg";
+import item2 from "../../public/images/carouselSlides/item-2.svg";
+import item3 from "../../public/images/carouselSlides/item-3.svg";
+import item4 from "../../public/images/carouselSlides/item-4.svg";
+import item5 from "../../public/images/carouselSlides/item-5.svg";
+
+const OPTIONS = {};
+const SLIDE_COUNT = 10;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
+const images = [item1, item2, item3, item4, item5];
 
 export default function Home() {
   return (
@@ -43,7 +49,7 @@ export default function Home() {
         <div className="text-sm text-[#A2A3B1]">
           Chair / <span className="text-black text-sm">Meryl Lounge Chair</span>
         </div>
-        <div className="flex justify-between gap-20">
+        {/* <div className="flex justify-between gap-20">
           <div>
             <Image
               src={backSmallArrowButton}
@@ -62,7 +68,7 @@ export default function Home() {
               className="px-[0.563rem] py-[0.375rem]"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center overflow-hidden">
@@ -126,22 +132,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-fit flex items-center overflow-hidden">
-          <div>
-            <Carousel />
-          </div>
-          <div className="z-10">
-            <Image
-              src={MerylLoungeChairTeal}
-              alt="Chair"
-              width={284}
-              // fill
-              // sizes="{max-width:284px} 100vw, 200px"
-              className=""
-              // className="relative -left-0  z-10 md:-left-60"
-            />
-          </div>
-          <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
+        <div>
+          {/* <div className="w-fit flex items-center overflow-hidden">
+            <div className="z-10">
+              <Image
+                src={MerylLoungeChairTeal}
+                alt="Chair"
+                width={284}
+                className=""
+              />
+            </div>
+            <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
+          </div> */}
+          {/* <div>
+            <Carousel images={images} />
+          </div> */}
+          <Carousel slides={SLIDES} images={images} options={OPTIONS} />
         </div>
         {/* <RadioGroup label="Select your favorite city">
           <Radio value="buenos-aires">Buenos Aires</Radio>
