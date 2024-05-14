@@ -1,4 +1,8 @@
-const ShippingMethod = ({ shippingMethod, date, freeOrNot }) => {
+const ShippingMethod = ({
+  shippingMethod = "Standard Shipping",
+  date = "N/A",
+  freeOrNot = "Free",
+}) => {
   return (
     <div className="flex items-center justify-between border px-6 py-4">
       <label htmlFor="nextDay">
@@ -6,14 +10,13 @@ const ShippingMethod = ({ shippingMethod, date, freeOrNot }) => {
           <input type="radio" name="shipmentMethod" />
           <div className="ml-2 text-base">
             <span className="font-bold  mr-2">{freeOrNot}</span>
-            {/** Regular Shipping */}
             {shippingMethod}
           </div>
         </div>
       </label>
-      {/**01 Feb, 2023 */}
       <div className="font-bold">{date}</div>
     </div>
   );
 };
+
 export default ShippingMethod;
