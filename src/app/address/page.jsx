@@ -4,14 +4,10 @@ import Image from "next/image";
 import OsmondArmchair from "../../../public/images/OsmondArmchair.svg";
 import ProductItem from "../components/ProductItem";
 import OrderCard from "../components/orderCard";
-import Stepper from "../components/Stepper";
 import AddressCard from "../components/addressCard";
 import dynamic from "next/dynamic";
-import { FaPlus } from "react-icons/fa";
-
-const StepperComponent = dynamic(() => import("../components/Stepper"), {
-  ssr: false,
-});
+import Stepper from "../components/Stepper";
+const currentStep = 1;
 
 export default function Cart() {
   return (
@@ -20,7 +16,7 @@ export default function Cart() {
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
             <div className="">
-              <StepperComponent />
+              <Stepper currentStep={currentStep} />
             </div>
 
             <div className="flex flex-col justify-between pb-8 w-full">
@@ -39,7 +35,7 @@ export default function Cart() {
                 />
               </div>
               <button className="flex items-center gap-4 text-[#3AA39F] ml-[4.75rem] mt-[2.125rem]">
-                <FaPlus /> Add New Address
+                Add New Address
               </button>
             </div>
           </div>
