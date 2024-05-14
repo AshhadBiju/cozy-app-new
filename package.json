@@ -15,6 +15,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-form-stepper": "^2.0.3",
+    "react-select": "^5.8.0",
     "swiper": "^11.1.1"
   },
   "devDependencies": {
