@@ -1,60 +1,60 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import OsmondArmchair from "../../../public/images/OsmondArmchair.svg";
-import ProductItem from "../components/ProductItem";
+import { useState } from "react";
+import Select from "react-select";
 import OrderCard from "../components/orderCard";
-import Stepper from "../components/Stepper";
-import AddressCard from "../components/addressCard";
-import dynamic from "next/dynamic";
-import { FaPlus } from "react-icons/fa";
 import ShippingMethod from "../components/shipmentMethod";
-const StepperComponent = dynamic(() => import("../components/Stepper"), {
-  ssr: false,
-});
+import Stepper from "../components/Stepper";
 
 export default function Cart() {
+  const [currentStep, setCurrentStep] = useState(0);
+  const NUMBER_OF_STEPS = 5;
+  const goToNextStep = () =>
+    setCurrentStep((prev) => (prev === NUMBER_OF_STEPS - 1 ? prev : prev + 1));
+  const goToPreviousStep = () =>
+    setCurrentStep((prev) => (prev <= 0 ? prev : prev - 1));
+
+  const options = [
+    { value: "option1", label: "Select date" },
+    { value: "option2", label: "Option 2" },
+    { value: "option3", label: "Option 3" },
+  ];
+
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
-            <div className="">
-              <StepperComponent />
+            <div>
+              <Stepper
+                currentStep={currentStep}
+                numberOfSteps={NUMBER_OF_STEPS}
+              />
+              <br />
+              <section className="flex gap-10">
+                <button
+                  onClick={goToPreviousStep}
+                  className="bg-blue-600 text-white p-2 rounded-md"
+                >
+                  Previous step
+                </button>
+                <button
+                  onClick={goToNextStep}
+                  className="bg-blue-600 text-white p-2 rounded-md"
+                >
+                  Next step
+                </button>
+              </section>
             </div>
 
             <div className="flex flex-col justify-between pb-8 w-full">
               <div className="font-bold mb-6 text-xl">Shipment Method</div>
               <div>
-                {/* <div className="flex items-center justify-between border px-6 py-4">
-                  <label htmlFor="nextDay">
-                    <div className="flex items-center">
-                      <input type="radio" id="nextDay" name="shipmentMethod" />
-                      <div className="ml-2 text-base">
-                        <span className="font-bold  mr-2">Free</span>
-                        Regular Shipping
-                      </div>
-                    </div>
-                  </label>
-                  <div className="font-bold">01 Feb, 2023</div>
-                </div> */}
                 <ShippingMethod
                   shippingMethod="Regular Shipping"
                   date="01 Feb, 2023"
                   freeOrNot="Free"
                 />
-                {/* <div className="flex items-center justify-between border px-6 py-4">
-                  <label htmlFor="express">
-                    <div className="flex items-center">
-                      <input type="radio" id="express" name="shipmentMethod" />
-                      <div className="ml-2 text-base">
-                        <span className="font-bold  mr-2">$8.50</span>
-                        Priority Shipping
-                      </div>
-                    </div>
-                  </label>
-                  <div className="font-bold">28 Jan, 2023</div>
-                </div> */}
                 <ShippingMethod
                   shippingMethod="Priority Shipping"
                   date="28 Jan, 2023"
@@ -70,11 +70,7 @@ export default function Cart() {
                       </div>
                     </div>
                   </label>
-                  <select className="text-[#8C92AC]">
-                    <option value="option1">Select date</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
+                  <Select options={options} className="text-[#8C92AC]" />
                 </div>
               </div>
             </div>

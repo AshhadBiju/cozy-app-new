@@ -60,7 +60,7 @@ import { Thumb } from "../../components/carouselThumbs";
 import Image from "next/image";
 
 const EmblaCarousel = (props) => {
-  const { slides, options, images } = props;
+  const { slides, options, images, thumbs } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -113,9 +113,10 @@ const EmblaCarousel = (props) => {
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
           <div className="embla-thumbs__container">
-            {slides.map((index) => (
+            {thumbs.map((index) => (
               <Thumb
                 key={index}
+                src={thumbs}
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
                 index={index}
