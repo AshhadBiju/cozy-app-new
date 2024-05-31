@@ -4,7 +4,8 @@ import { Cambay } from "next/font/google";
 import "./globals.css";
 // import * as React from "react";
 // import { NextUIProvider } from "@nextui-org/react";
-import Provider from "../app/components/NextUIProvider";
+import Provider from "./components/NextUIProvider";
+i;
 const cambay = Cambay({
   subsets: ["latin"],
   weight: ["400", "700"],

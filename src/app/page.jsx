@@ -1,28 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import Counter from "../app/components/Counter";
-import Carousel from "../app/components/carousel/carousel";
-import AddToCartButton from "../app/components/AddToCartButton";
-import AddToWishlistButton from "../app/components/AddToWishlistButton";
-import backArrowButton from "../../public/images/backArrowButton.svg";
-import backSmallArrowButton from "../../public/images/backSmallArrowButton.svg";
-import forwardSmallArrowButton from "../../public/images/forwardSmallArrowButton.svg";
-import SmallArrowButton from "./components/SmallArrowButton";
-import MerylLoungeChairTeal from "../../public/images/MerylLoungeChairTeal.png";
-import SocialMediaLinks from "../app/components/SocialMediaLinks";
-import item1 from "../../public/images/carouselSlides/item-1.svg";
-import item2 from "../../public/images/carouselSlides/item-2.svg";
-import item3 from "../../public/images/carouselSlides/item-3.svg";
-import item4 from "../../public/images/carouselSlides/item-4.svg";
-import item5 from "../../public/images/carouselSlides/item-5.svg";
-import ColorComponents from "../app/components/colorSelector";
+import Counter from "@/app/components/Counter";
+import AddToCartButton from "@/app/components/AddToCartButton";
+import AddToWishlistButton from "@/app/components/AddToWishlistButton";
+import backArrowButton from "@/public/images/backArrowButton.svg";
+import backSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
+import forwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
+import SmallArrowButton from "@/public/images/backSmallArrowButton.svg";
+import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
+// import item1 from "../../public/images/carouselSlides/item-1.svg";
+// import item2 from "../../public/images/carouselSlides/item-2.svg";
+// import item3 from "../../public/images/carouselSlides/item-3.svg";
+// import item4 from "../../public/images/carouselSlides/item-4.svg";
+// import item5 from "../../public/images/carouselSlides/item-5.svg";
+// import ColorComponents from "";
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const images = [item1, item2, item3, item4, item5];
-const thumbs = [item1, item2, item3, item4, item5];
+// const images = [item1, item2, item3, item4, item5];
+// const thumbs = [item1, item2, item3, item4, item5];
 const colors = ["#C1BDB3", "#58737D", "#545454", "#CBA5A5"];
 
 export default function Home() {
@@ -82,15 +81,13 @@ export default function Home() {
             height-adjusting mechanism that’s built to outlast years of ups and
             downs.
           </p>
-          {/* <div className="flex gap-4 my-9">
+          <div className="flex gap-4 my-9">
             <div className="bg-[#C1BDB3] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#58737D] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#545454] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#CBA5A5] rounded-full p-[0.670rem]"></div>
-          </div> */}
-          <div>
-            <ColorComponents colors={colors} />
           </div>
+          <div>{/* <ColorComponents colors={colors} /> */}</div>
           <div className="flex gap-6">
             <div>
               <Counter />
@@ -122,15 +119,6 @@ export default function Home() {
             </div>
             <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
           </div>
-          {/* <div>
-            <Carousel images={images} />
-          </div> */}
-          {/* <Carousel
-            slides={SLIDES}
-            images={images}
-            options={OPTIONS}
-            thumbs={thumbs}
-          /> */}
         </div>
       </div>
     </main>

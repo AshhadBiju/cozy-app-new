@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "../components/Counter";
+import Counter from "./Counter";
 import Image from "next/image";
 const ProductItem = ({ imageUrl, title, color, price }) => {
   return (

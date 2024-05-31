@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import searchButton from "../../../../../public/images/headerButtons/searchButton.svg";
-import menuButton from "../../../../../public/images/headerButtons/menuButton.svg";
-import shoppingCartButton from "../../../../../public/images/headerButtons/shoppingCartButton.svg";
+import searchButton from "@/public/images/headerButtons/searchButton.svg";
+import menuButton from "@/public/images/headerButtons/menuButton.svg";
+import shoppingCartButton from "@/public/images/headerButtons/shoppingCartButton.svg";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import trailingIcon from "../../../public/images/trailingIcon.svg";
-import AddToCartButton from "./AddToCartButton";
+import { trailingIcon } from "../public/images/trailingIcon.svg";
+// import AddToCartButton from "../components/AddToCartButton";
 import Link from "next/link";
 
 export default function OrderCard({ orderCardLink }) {

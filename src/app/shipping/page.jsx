@@ -2,9 +2,9 @@
 import React from "react";
 import { useState } from "react";
 import Select from "react-select";
-import OrderCard from "../components/orderCard";
+import OrderCard from "";
 import ShippingMethod from "../components/shipmentMethod";
-import Stepper from "../components/Stepper";
+import Stepper from "";
 
 export default function Cart() {
   const [currentStep, setCurrentStep] = useState(0);
