@@ -21,20 +21,14 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-      // "@/*": ["src/*"]
     }
   },
-  // "include": [
-  //   "next-env.d.ts",
-  //   "**/*.ts",
-  //   "**/*.tsx",
-  //   ".next/types/**/*.ts",
-  //   "src/app/layout.jsx",
-  //   "src/app/page.jsx",
-  //   "src/components",
-  //   "src/public",
-  //   "src/app",
-  //   "src"
-  // ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src"
+  ]
 }

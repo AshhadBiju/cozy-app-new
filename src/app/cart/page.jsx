@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import OsmondArmchair from "../../../public/images/OsmondArmchair.svg";
-import ProductItem from "../components/ProductItem";
-import OrderCard from "../components/orderCard";
+import OsmondArmchair from "@/public/images/OsmondArmchair.svg";
+import ProductItem from "@/components/ProductItem";
+import OrderCard from "@/components/OrderCard";
 
-import percent from "../../../public/images/percent.svg";
+import percent from "@/public/images/percent.svg";
 export default function Cart() {
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">

@@ -1,11 +1,10 @@
-import Navigation from "./components/navigation/navbar";
+import Navigation from "@/components/navigation/index";
 // import { Inter } from "next/font/google";
 import { Cambay } from "next/font/google";
 import "./globals.css";
 // import * as React from "react";
 // import { NextUIProvider } from "@nextui-org/react";
-import Provider from "./components/NextUIProvider";
-i;
+import Provider from "@/components/NextUIProvider";
 const cambay = Cambay({
   subsets: ["latin"],
   weight: ["400", "700"],

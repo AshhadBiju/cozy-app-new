@@ -1,8 +1,9 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import Counter from "@/app/components/Counter";
-import AddToCartButton from "@/app/components/AddToCartButton";
-import AddToWishlistButton from "@/app/components/AddToWishlistButton";
+import Counter from "@/components/Counter";
+import AddToCartButton from "@/components/AddToCartButton";
+import AddToWishlistButton from "@/components/AddToWishlistButton";
 import backArrowButton from "@/public/images/backArrowButton.svg";
 import backSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
 import forwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
@@ -15,10 +16,9 @@ import SocialMediaLinks from "@/components/SocialMediaLinks";
 // import item4 from "../../public/images/carouselSlides/item-4.svg";
 // import item5 from "../../public/images/carouselSlides/item-5.svg";
 // import ColorComponents from "";
-
-const OPTIONS = {};
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// const OPTIONS = {};
+// const SLIDE_COUNT = 5;
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 // const images = [item1, item2, item3, item4, item5];
 // const thumbs = [item1, item2, item3, item4, item5];
