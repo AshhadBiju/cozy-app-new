@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import fb from "@/public/images/socialMediaIcons/fb.svg";
@@ -12,7 +13,7 @@ const socialMediaLinks = [
   { href: "/instagram", src: insta },
 ];
 
-const SocialMediaLinks = () => {
+const SocialMedia = () => {
   return (
     <div className="flex gap-6">
       {socialMediaLinks.map((socialMedia, index) => (
@@ -24,4 +25,4 @@ const SocialMediaLinks = () => {
   );
 };
 
-export default SocialMediaLinks;
+export default SocialMedia;

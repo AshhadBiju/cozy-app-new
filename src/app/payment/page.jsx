@@ -2,11 +2,11 @@
 import React from "react";
 import Stepper from "@/components/Stepper";
 import { useState } from "react";
-import OrderCard from "";
-import visaCard from "";
-import masterCard from "./";
-import PaymentCard from "../components/paymentCard";
-import AddToWishlistButton from "";
+import OrderCard from "@/components/OrderCard";
+import visaCard from "@/public/images/visa.svg";
+import masterCard from "@/public/images/mastercard.svg";
+import PaymentCard from "@/components/paymentCard";
+import AddToWishlistButton from "@/components/AddToWishlistButton";
 
 const paymentCards = [
   { paymentCardImg: visaCard, expiryDate: "12/2022", cardNumber: "****6754" },

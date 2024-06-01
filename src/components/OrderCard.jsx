@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { trailingIcon } from "../public/images/trailingIcon.svg";
+import trailingIcon from "@/public/images/trailingIcon.svg";
 // import AddToCartButton from "../components/AddToCartButton";
 import Link from "next/link";
 

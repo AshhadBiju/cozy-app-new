@@ -4,12 +4,12 @@ import Image from "next/image";
 import Counter from "@/components/Counter";
 import AddToCartButton from "@/components/AddToCartButton";
 import AddToWishlistButton from "@/components/AddToWishlistButton";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
+import SmallArrowButton from "@/components/SmallArrowButton";
 import backArrowButton from "@/public/images/backArrowButton.svg";
 import backSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
 import forwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
-import SmallArrowButton from "@/public/images/backSmallArrowButton.svg";
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
-import SocialMediaLinks from "@/components/SocialMediaLinks";
 // import item1 from "../../public/images/carouselSlides/item-1.svg";
 // import item2 from "../../public/images/carouselSlides/item-2.svg";
 // import item3 from "../../public/images/carouselSlides/item-3.svg";
@@ -22,7 +22,7 @@ import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 // const images = [item1, item2, item3, item4, item5];
 // const thumbs = [item1, item2, item3, item4, item5];
-const colors = ["#C1BDB3", "#58737D", "#545454", "#CBA5A5"];
+// const colors = ["#C1BDB3", "#58737D", "#545454", "#CBA5A5"];
 
 export default function Home() {
   return (

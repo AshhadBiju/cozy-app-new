@@ -1,4 +1,4 @@
-import Navigation from "@/components/navigation/index";
+import Navigation from "@/components/navigation/navbar/index";
 // import { Inter } from "next/font/google";
 import { Cambay } from "next/font/google";
 import "./globals.css";
