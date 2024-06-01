@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Counter from "@/components/Counter";
 import AddToCartButton from "@/components/AddToCartButton";
+import ColorSelector from "@/components/colorSelector";
 import AddToWishlistButton from "@/components/AddToWishlistButton";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import SmallArrowButton from "@/components/SmallArrowButton";
@@ -10,19 +11,7 @@ import backArrowButton from "@/public/images/backArrowButton.svg";
 import backSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
 import forwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
-// import item1 from "../../public/images/carouselSlides/item-1.svg";
-// import item2 from "../../public/images/carouselSlides/item-2.svg";
-// import item3 from "../../public/images/carouselSlides/item-3.svg";
-// import item4 from "../../public/images/carouselSlides/item-4.svg";
-// import item5 from "../../public/images/carouselSlides/item-5.svg";
-// import ColorComponents from "";
-// const OPTIONS = {};
-// const SLIDE_COUNT = 5;
-// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
-// const images = [item1, item2, item3, item4, item5];
-// const thumbs = [item1, item2, item3, item4, item5];
-// const colors = ["#C1BDB3", "#58737D", "#545454", "#CBA5A5"];
+import beforeLike from "@/public/images/icons/before-like.svg";
 
 export default function Home() {
   return (
@@ -81,12 +70,13 @@ export default function Home() {
             height-adjusting mechanism that’s built to outlast years of ups and
             downs.
           </p>
-          <div className="flex gap-4 my-9">
+          {/* <div className="flex gap-4 my-9">
             <div className="bg-[#C1BDB3] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#58737D] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#545454] rounded-full p-[0.670rem]"></div>
             <div className="bg-[#CBA5A5] rounded-full p-[0.670rem]"></div>
-          </div>
+          </div> */}
+          <ColorSelector />
           <div>{/* <ColorComponents colors={colors} /> */}</div>
           <div className="flex gap-6">
             <div>
@@ -100,7 +90,17 @@ export default function Home() {
             <li>30-day trial</li>
           </ul>
           <div className="flex justify-between">
-            <AddToWishlistButton addToText="Add to Wishlist" />
+            <AddToWishlistButton
+              addToText="Add to Wishlist"
+              Icon={
+                <Image
+                  src={beforeLike}
+                  alt="Wishlist Icon"
+                  width={25}
+                  height={25}
+                />
+              }
+            />
             <SocialMediaLinks />
           </div>
         </div>

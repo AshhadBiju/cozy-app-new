@@ -20,6 +20,18 @@ export default function Cart() {
     { value: "option3", label: "Option 3" },
   ];
 
+  const shippingMethods = [
+    {
+      shippingMethod: "Regular Shipping",
+      date: "01 Feb, 2023",
+      freeOrNot: "Free",
+    },
+    {
+      shippingMethod: "Priority Shipping",
+      date: "28 Jan, 2023",
+      freeOrNot: "$8.50",
+    },
+  ];
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
       <section>
@@ -50,7 +62,7 @@ export default function Cart() {
             <div className="flex flex-col justify-between pb-8 w-full">
               <div className="font-bold mb-6 text-xl">Shipment Method</div>
               <div>
-                <ShippingMethod
+                {/* <ShippingMethod
                   shippingMethod="Regular Shipping"
                   date="01 Feb, 2023"
                   freeOrNot="Free"
@@ -59,7 +71,15 @@ export default function Cart() {
                   shippingMethod="Priority Shipping"
                   date="28 Jan, 2023"
                   freeOrNot="$8.50"
-                />
+                /> */}
+                {shippingMethods.map((method, index) => (
+                  <ShippingMethod
+                    key={index}
+                    shippingMethod={method.shippingMethod}
+                    date={method.date}
+                    freeOrNot={method.freeOrNot}
+                  />
+                ))}
                 <div className="flex justify-between border px-6 py-4 md:flex-row flex-col md:items-center items-center">
                   <label htmlFor="standard">
                     <div className="flex items-center">
