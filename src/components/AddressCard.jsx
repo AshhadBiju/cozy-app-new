@@ -13,7 +13,7 @@ const AddressCard = ({
         <div>
           <div className="text-xl font-semibold text-[#17183B]">
             {name}
-            <span className="ml-[0.875rem] text-xs border-2 rounded border-[#3AA39F]  text-[#3AA39F] px-2 py-1">
+            <span className="ml-[0.875rem] text-xs border-2 rounded border-primary text-primary px-2 py-1">
               {place}
             </span>
           </div>

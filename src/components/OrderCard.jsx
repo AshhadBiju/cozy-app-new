@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import trailingIcon from "@/public/images/trailingIcon.svg";
+import TrailingIcon from "@/public/images/trailingIcon.svg";
 // import AddToCartButton from "../components/AddToCartButton";
 import Link from "next/link";
 
@@ -51,7 +51,7 @@ export default function OrderCard({ orderCardLink }) {
             className="outline-none max-w-fit text-base"
             placeholder="Coupon code"
           />
-          <Image src={trailingIcon} width={24} height={24} />
+          <Image src={TrailingIcon} width={24} height={24} />
         </div>
         <div>
           <Link href="">

@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import plus from "@/public/images/icons/plus.svg";
-import minus from "@/public/images/icons/minus.svg";
+import PlusSign from "@/public/images/icons/plus.svg";
+import MinusSign from "@/public/images/icons/minus.svg";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -19,7 +19,7 @@ const Counter = () => {
     <div className="flex gap-10 border-[#A2A3B1] border-2 rounded-[0.25rem] w-40 px-4 py-[0.875rem]">
       <button onClick={decrement}>
         <Image
-          src={minus}
+          src={MinusSign}
           alt="No button"
           width={34}
           height={34}
@@ -28,7 +28,13 @@ const Counter = () => {
       </button>
       <span>{count}</span>
       <button onClick={increment}>
-        <Image src={plus} alt="No button" width={34} height={34} className="" />
+        <Image
+          src={PlusSign}
+          alt="No button"
+          width={34}
+          height={34}
+          className=""
+        />
       </button>
     </div>
   );

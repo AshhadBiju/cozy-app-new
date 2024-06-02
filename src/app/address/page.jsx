@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-// import OsmondArmchair from "../../../public/images/OsmondArmchair.svg";
 import ProductItem from "@/components/ProductItem";
 import OrderCard from "@/components/OrderCard";
-// import AddressCard from "../../components/AddressCard";
 import AddressCard from "@/components/AddressCard";
 import Stepper from "@/components/Stepper";
 const currentStep = 1;
