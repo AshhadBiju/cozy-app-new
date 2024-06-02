@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { RadioGroup, Radio } from "@nextui-org/radio";
 
-const PaymentCard = ({ paymentCardImg, expiryDate, cardNumber }) => {
+const PaymentCard = ({
+  paymentCardImg = "/defaultCard.svg",
+  expiryDate = "MM/YY",
+  cardNumber = "*** *** ***", // default parameters
+}) => {
   return (
     <div className="flex items-center justify-between border px-6 py-4 flex-wrap gap-3">
       <label>
-        <div className="flex items-center">
+        <div className="flex items-center cursor-pointer">
           <input
             type="radio"
             name="paymentMethod"

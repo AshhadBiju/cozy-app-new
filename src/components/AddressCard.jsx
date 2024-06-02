@@ -1,9 +1,14 @@
 import React from "react";
 
-const AddressCard = ({ name, address, contact, place }) => {
+const AddressCard = ({
+  name = "John",
+  address = "Luxembourg",
+  contact = "+352 5678",
+  place = "HOME",
+}) => {
   return (
     <div className="flex justify-between w-full">
-      <label className="flex items-start">
+      <label className="flex items-start cursor-pointer">
         <input type="radio" name="address" className="mr-4 mt-1" />
         <div>
           <div className="text-xl font-semibold text-[#17183B]">
