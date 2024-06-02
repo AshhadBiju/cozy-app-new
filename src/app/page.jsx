@@ -7,11 +7,11 @@ import ColorSelector from "@/components/colorSelector";
 import AddToWishlistButton from "@/components/AddToWishlistButton";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import SmallArrowButton from "@/components/SmallArrowButton";
-import backArrowButton from "@/public/images/backArrowButton.svg";
-import backSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
-import forwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
+import BackArrowButton from "@/public/images/backArrowButton.svg";
+import BackSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
+import ForwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
-import beforeLike from "@/public/images/icons/before-like.svg";
+import BeforeLike from "@/public/images/icons/before-like.svg";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex justify-between mb-3">
         <div>
           <Image
-            src={backArrowButton}
+            src={BackArrowButton}
             alt="No button"
             width={24}
             height={24}
@@ -37,11 +37,11 @@ export default function Home() {
 
         <div className="flex justify-between gap-20">
           <SmallArrowButton
-            arrowButton={backSmallArrowButton}
+            arrowButton={BackSmallArrowButton}
             alt="No button"
           />
           <SmallArrowButton
-            arrowButton={forwardSmallArrowButton}
+            arrowButton={ForwardSmallArrowButton}
             alt="No button"
           />
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
               addToText="Add to Wishlist"
               Icon={
                 <Image
-                  src={beforeLike}
+                  src={BeforeLike}
                   alt="Wishlist Icon"
                   width={25}
                   height={25}
