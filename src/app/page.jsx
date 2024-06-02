@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import Counter from "@/components/Counter";
-import AddToCartButton from "@/components/AddToCartButton";
-import ColorSelector from "@/components/colorSelector";
-import AddToWishlistButton from "@/components/AddToWishlistButton";
-import SocialMediaLinks from "@/components/SocialMediaLinks";
+// import Counter from "@/components/Counter";
+// import AddToCartButton from "@/components/AddToCartButton";
+// import ColorSelector from "@/components/colorSelector";
+// import AddToWishlistButton from "@/components/AddToWishlistButton";
+// import SocialMediaLinks from "@/components/SocialMediaLinks";
+import ProductDetails from "@/components/ProductDetails/ProductDetails";
 import SmallArrowButton from "@/components/SmallArrowButton";
 import BackArrowButton from "@/public/images/backArrowButton.svg";
 import BackSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
@@ -48,7 +49,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center overflow-hidden">
-        <div className="w-full md:w-[33%]">
+        {/* <div className="w-full md:w-[33%]">
           <h2 className="text-[2.75rem] font-semibold mb-2">
             Meryl Lounge Chair
           </h2>
@@ -70,14 +71,9 @@ export default function Home() {
             height-adjusting mechanism that’s built to outlast years of ups and
             downs.
           </p>
-          {/* <div className="flex gap-4 my-9">
-            <div className="bg-[#C1BDB3] rounded-full p-[0.670rem]"></div>
-            <div className="bg-[#58737D] rounded-full p-[0.670rem]"></div>
-            <div className="bg-[#545454] rounded-full p-[0.670rem]"></div>
-            <div className="bg-[#CBA5A5] rounded-full p-[0.670rem]"></div>
-          </div> */}
+
           <ColorSelector />
-          <div>{/* <ColorComponents colors={colors} /> */}</div>
+
           <div className="flex gap-6">
             <div>
               <Counter />
@@ -103,7 +99,8 @@ export default function Home() {
             />
             <SocialMediaLinks />
           </div>
-        </div>
+        </div> */}
+        <ProductDetails />
         <div>
           <div className="w-fit flex items-center overflow-hidden">
             <div className="z-10">
