@@ -55,7 +55,7 @@ export default function OrderCard({ orderCardLink }) {
         </div>
         <div>
           <Link href="">
-            <button className="bg-[#3AA39F] flex items-center justify-center text-white rounded-[0.25rem] hover:bg-[#318a87] min-h-14 w-full">
+            <button className="bg-primary flex items-center justify-center text-white rounded-[0.25rem] hover:bg-primaryHover min-h-14 w-full">
               Proceed to Checkout
             </button>
           </Link>

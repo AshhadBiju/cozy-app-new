@@ -44,7 +44,7 @@ export default function ProductDetails() {
         </div>
         {/* <AddToCartButton cartText="Add to Cart" /> */}
         <Button
-          cartText="Add to Cart"
+          buttonText="Add to Cart"
           onClick={() => alert("Item added to cart!")}
           className="" //Any additional styles added here will override the core Button component
           // Default size is md, so no need to specify if md

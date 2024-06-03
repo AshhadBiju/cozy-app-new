@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import ProductItem from "@/components/ProductItem";
+import Button from "@/components/UIComponents/Button";
 import OrderCard from "@/components/OrderCard";
 import AddressCard from "@/components/AddressCard";
 import Stepper from "@/components/Stepper";
@@ -32,9 +33,10 @@ export default function Cart() {
                   place="HOME"
                 />
               </div>
-              <button className="flex items-center gap-4 text-[#3AA39F] ml-[4.75rem] mt-[2.125rem]">
+              {/* <button className="flex items-center gap-4 text-primary ml-[4.75rem] mt-[2.125rem]">
                 Add New Address
-              </button>
+              </button> */}
+              <Button buttonText="Add New Address" />
             </div>
           </div>
           <div>

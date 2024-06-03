@@ -4,7 +4,7 @@ import Image from "next/image";
 const PaymentCard = ({
   paymentCardImg = "/defaultCard.svg",
   expiryDate = "MM/YY",
-  cardNumber = "*** *** ***", // default parameters
+  cardNumber = "*** *** ***", //default parameters
 }) => {
   return (
     <div className="flex items-center justify-between border px-6 py-4 flex-wrap gap-3">
