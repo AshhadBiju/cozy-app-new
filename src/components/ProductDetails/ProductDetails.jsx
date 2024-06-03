@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Counter from "@/components/Counter";
-import AddToCartButton from "@/components/AddToCartButton";
+import Button from "@/components/UIComponents/Button";
 import ColorSelector from "@/components/colorSelector";
 import AddToWishlistButton from "@/components/AddToWishlistButton";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
@@ -42,7 +42,13 @@ export default function ProductDetails() {
         <div>
           <Counter />
         </div>
-        <AddToCartButton cartText="Add to Cart" />
+        {/* <AddToCartButton cartText="Add to Cart" /> */}
+        <Button
+          cartText="Add to Cart"
+          onClick={() => alert("Item added to cart!")}
+          className="" //Any additional styles added here will override the core Button component
+          // Default size is md, so no need to specify if md
+        />
       </div>
       <ul className="text-base flex list-disc gap-9 mt-8 mb-20">
         <li className="list-none">Free 3-5 day shipping</li>
