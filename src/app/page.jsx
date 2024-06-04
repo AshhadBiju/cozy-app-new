@@ -8,24 +8,26 @@ import Image from "next/image";
 // import SocialMediaLinks from "@/components/SocialMediaLinks";
 import ProductDetails from "@/components/ProductDetails/ProductDetails";
 import SmallArrowButton from "@/components/SmallArrowButton";
-import BackArrowButton from "@/public/images/backArrowButton.svg";
+// import BackArrowButton from "@/public/images/backArrowButton.svg";
 import BackSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
 import ForwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
 import BeforeLike from "@/public/images/icons/before-like.svg";
+import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
     <main className="container mx-auto px-4 bg-white max-h-screen mt-[3.375rem] mb-[3.5rem]">
       <div className="flex justify-between mb-3">
         <div>
-          <Image
+          {/* <Image
             src={BackArrowButton}
             alt="No button"
             width={24}
             height={24}
             className=""
-          />
+          /> */}
+          <Icon name="before-like" />
         </div>
         <div className="text-black text-[2rem]">
           01 <span className="text-2xl text-[#A2A3B1]">/05</span>

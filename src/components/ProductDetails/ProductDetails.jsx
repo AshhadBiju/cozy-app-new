@@ -37,7 +37,6 @@ export default function ProductDetails() {
       <p className="text-gray-600 text-base ">{product.description}</p>
 
       <ColorSelector />
-      <div>{/* <ColorComponents colors={colors} /> */}</div>
       <div className="flex gap-6">
         <div>
           <Counter />
@@ -47,6 +46,7 @@ export default function ProductDetails() {
           buttonText="Add to Cart"
           onClick={() => alert("Item added to cart!")}
           className="" //Any additional styles added here will override the core Button component
+          buttonColors="primary"
           // Default size is md, so no need to specify if md
         />
       </div>
