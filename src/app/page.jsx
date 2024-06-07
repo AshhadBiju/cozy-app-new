@@ -17,7 +17,7 @@ import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 bg-white max-h-screen mt-[3.375rem] mb-[3.5rem]">
+    <main className="container mx-auto px-8 bg-white max-h-screen mt-[3.375rem] mb-[3.5rem]">
       <div className="flex justify-between mb-3">
         <div>
           {/* <Image
