@@ -14,6 +14,7 @@ import ForwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
 import BeforeLike from "@/public/images/icons/before-like.svg";
 import Icon from "@/components/Icon";
+import SwiperCarousel from "@/app/swiper/swiperCarousel";
 
 export default function Home() {
   return (
@@ -104,7 +105,7 @@ export default function Home() {
         </div> */}
         <ProductDetails />
         <div>
-          <div className="w-fit flex items-center overflow-hidden">
+          {/* <div className="w-fit flex items-center overflow-hidden">
             <div className="z-10">
               <Image
                 // className="w-full h-auto mx-auto"
@@ -117,7 +118,8 @@ export default function Home() {
               />
             </div>
             <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
-          </div>
+          </div> */}
+          <SwiperCarousel />
         </div>
       </div>
     </main>
