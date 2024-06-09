@@ -1,11 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-// import Counter from "@/components/Counter";
-// import AddToCartButton from "@/components/AddToCartButton";
-// import ColorSelector from "@/components/colorSelector";
-// import AddToWishlistButton from "@/components/AddToWishlistButton";
-// import SocialMediaLinks from "@/components/SocialMediaLinks";
+
 import ProductDetails from "@/components/ProductDetails/ProductDetails";
 import SmallArrowButton from "@/components/SmallArrowButton";
 // import BackArrowButton from "@/public/images/backArrowButton.svg";
@@ -18,7 +14,7 @@ import SwiperCarousel from "@/app/swiper/swiperCarousel";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-8 bg-white max-h-screen mt-[3.375rem] mb-[3.5rem]">
+    <main className="container mx-auto px-8 bg-white max-h-screen mt-[2rem] mb-[3rem]">
       <div className="flex justify-between mb-3">
         <div>
           {/* <Image
@@ -52,73 +48,8 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center overflow-hidden">
-        {/* <div className="w-full md:w-[33%]">
-          <h2 className="text-[2.75rem] font-semibold mb-2">
-            Meryl Lounge Chair
-          </h2>
-          <div className="flex flex-col md:flex-row justify-between mt-6 mb-12">
-            <div>
-              <span>$</span>
-              149.99
-            </div>
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="text-yellow-500">★★★★★</div>
-              <div className="text-gray-500">
-                4.6 / 5.0 <span>(556)</span>
-              </div>
-            </div>
-          </div>
-          <p className="text-gray-600 text-base ">
-            The gently curved lines accentuated by sewn details are kind to your
-            body and pleasant to look at. Also, there’s a tilt and
-            height-adjusting mechanism that’s built to outlast years of ups and
-            downs.
-          </p>
-
-          <ColorSelector />
-
-          <div className="flex gap-6">
-            <div>
-              <Counter />
-            </div>
-            <AddToCartButton cartText="Add to Cart" />
-          </div>
-          <ul className="text-base flex list-disc gap-9 mt-8 mb-20">
-            <li className="list-none">Free 3-5 day shipping</li>
-            <li>Tool-free assembly</li>
-            <li>30-day trial</li>
-          </ul>
-          <div className="flex justify-between">
-            <AddToWishlistButton
-              addToText="Add to Wishlist"
-              Icon={
-                <Image
-                  src={BeforeLike}
-                  alt="Wishlist Icon"
-                  width={25}
-                  height={25}
-                />
-              }
-            />
-            <SocialMediaLinks />
-          </div>
-        </div> */}
         <ProductDetails />
         <div>
-          {/* <div className="w-fit flex items-center overflow-hidden">
-            <div className="z-10">
-              <Image
-                // className="w-full h-auto mx-auto"
-                src={MerylLoungeChairTeal}
-                alt="Chair"
-                width={254}
-                height={451}
-                sizes="(min-width: 1040px) 254px, (min-width: 780px) 147px, 254px"
-                priority={true}
-              />
-            </div>
-            <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
-          </div> */}
           <SwiperCarousel />
         </div>
       </div>

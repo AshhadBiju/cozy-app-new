@@ -25,8 +25,6 @@ export default function Slides() {
           }}
           modules={[FreeMode, Navigation, Thumbs]}
           className="h-[469px] rounded-lg z-10"
-          // onSlideChange={() => console.log("slide change")}
-          // onSwiper={(swiper) => console.log(swiper)}
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
@@ -50,7 +48,7 @@ export default function Slides() {
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="thumbs mt-3 h-full w-[616px] rounded-lg "
+          className="thumbs mt-3 h-full w-[616px] rounded-lg mySwiper"
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
