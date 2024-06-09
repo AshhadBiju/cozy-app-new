@@ -13,7 +13,7 @@ import "swiper/css/thumbs";
 export default function Slides() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section className="py-12 w-[844px]">
+    <section className="py-12 md:w-[844px] w-fit">
       <div className="container">
         <Swiper
           loop={true}
@@ -46,7 +46,7 @@ export default function Slides() {
           onSwiper={setThumbsSwiper}
           loop={true}
           spaceBetween={12}
-          slidesPerView={4}
+          slidesPerView={5}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
