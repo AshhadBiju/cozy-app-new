@@ -8,6 +8,7 @@ import AddToWishlistButton from "@/components/AddToWishlistButton";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import BeforeLike from "@/public/images/icons/before-like.svg";
 import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
+import Icon from "@/components/UIComponents/Icon";
 
 export default function ProductDetails() {
   const [product, setProduct] = useState({
@@ -41,11 +42,10 @@ export default function ProductDetails() {
         <div>
           <Counter />
         </div>
-        {/* <AddToCartButton cartText="Add to Cart" /> */}
         <Button
           buttonText="Add to Cart"
           onClick={() => alert("Item added to cart!")}
-          className="" //Any additional styles added here will override the core Button component
+          className="w-40" //Any additional styles added here will override the core Button component
           buttonColors="primary"
           // Default size is md, so no need to specify if md
         />
@@ -56,16 +56,10 @@ export default function ProductDetails() {
         <li>30-day trial</li>
       </ul>
       <div className="flex justify-between">
-        <AddToWishlistButton
-          addToText="Add to Wishlist"
-          Icon={
-            <Image
-              src={BeforeLike}
-              alt="Wishlist Icon"
-              width={25}
-              height={25}
-            />
-          }
+        <Icon
+          src={BeforeLike}
+          text="Add to wishlist"
+          textClassName="text-primary"
         />
         <SocialMediaLinks />
       </div>

@@ -1,10 +1,9 @@
 import React from "react";
-import Image from "next/image";
 import OsmondArmchair from "@/public/images/OsmondArmchair.svg";
 import ProductItem from "@/components/ProductItem";
 import OrderCard from "@/components/OrderCard";
-
 import percent from "@/public/images/percent.svg";
+import Icon from "@/components/UIComponents/Icon";
 export default function Cart() {
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
@@ -37,7 +36,7 @@ export default function Cart() {
 
             <div className="flex p-5 gap-3 border-2 border-[#3AA39F] rounded mt-9 bg-[#3AA39F] bg-opacity-10">
               <div>
-                <Image src={percent} />
+                <Icon src={percent} />
               </div>
               <div className="text-[#17183B]">
                 10% Instant Discount with Federal Bank Debit Cards on a min

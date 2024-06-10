@@ -14,7 +14,7 @@ const Button = ({
     lg: "min-h-16 px-8",
   };
   const buttonColorsDefault = {
-    primary: "bg-primary hover:bg-primaryHover", //
+    primary: "bg-primary hover:bg-primaryHover",
   };
 
   return (

@@ -1,10 +1,23 @@
+"use client";
+import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 import TrailingIcon from "@/public/images/trailingIcon.svg";
 // import AddToCartButton from "../components/AddToCartButton";
 import Link from "next/link";
+import Button from "./UIComponents/Button";
+import Icon from "./UIComponents/Icon";
 
-export default function OrderCard({ orderCardLink }) {
+export default function OrderCard() {
+  const [orderCard, setOrderCard] = useState({
+    price: 149.99,
+    discount: 31.9,
+    shipping: "Free",
+    couponApplied: 0.0,
+    total: 288.08,
+    estimatedDelivery: "01 Feb, 2023",
+  });
+
   return (
     <div className="order-card border p-8 max-w-full md:w-[23.75rem]">
       <h2 className="font-bold">Order Summary</h2>
@@ -12,25 +25,28 @@ export default function OrderCard({ orderCardLink }) {
         <div className="flex justify-between mb-6">
           <div>Price</div>
           <div>
-            <span>$</span>319.98
+            <span>$</span>
+            {orderCard.price}
           </div>
         </div>
         <div className="flex justify-between mb-6">
           <div>Discount</div>
           <div>
-            <span>$</span>31.9
+            <span>$</span>
+            {orderCard.discount}
           </div>
         </div>
         <div className="flex justify-between mb-6">
           <div>Shipping</div>
           <div className="">
-            <span className="displ">$</span>Free
+            <span>{orderCard.shipping}</span>
           </div>
         </div>
         <div className="flex justify-between">
           <div>Coupon Applied</div>
           <div>
-            <span>$</span>0.00
+            <span>$</span>
+            {orderCard.couponApplied}
           </div>
         </div>
       </div>
@@ -38,12 +54,13 @@ export default function OrderCard({ orderCardLink }) {
         <div className="flex justify-between mb-6">
           <div>TOTAL</div>
           <div>
-            <span>$</span>288.08
+            <span>$</span>
+            {orderCard.total}
           </div>
         </div>
         <div className="flex justify-between mb-6 text-base">
           <div>Estimated Delivery by</div>
-          <div>01 Feb, 2023</div>
+          <div>{orderCard.estimatedDelivery}</div>
         </div>
         <div className="flex justify-between border mb-6 min-h-14 w-full p-4">
           <input
@@ -51,14 +68,15 @@ export default function OrderCard({ orderCardLink }) {
             className="outline-none max-w-fit text-base"
             placeholder="Coupon code"
           />
-          <Image src={TrailingIcon} width={24} height={24} />
+          <Icon src={TrailingIcon} />
         </div>
         <div>
-          <Link href="">
-            <button className="bg-primary flex items-center justify-center text-white rounded-[0.25rem] hover:bg-primaryHover min-h-14 w-full">
-              Proceed to Checkout
-            </button>
-          </Link>
+          <Button
+            buttonText="Proceed to Checkout"
+            onClick={() => alert("Going to Checkout !")}
+            className=""
+            buttonColors="primary"
+          />
         </div>
       </div>
     </div>
