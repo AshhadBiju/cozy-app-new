@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,14 +17,7 @@ export default function Home() {
     <main className="container mx-auto px-8 bg-white max-h-screen mt-[2rem] mb-[3rem]">
       <div className="flex justify-between mb-3">
         <div>
-          {/* <Image
-            src={BackArrowButton}
-            alt="No button"
-            width={24}
-            height={24}
-            className=""
-          /> */}
-          <Icon name="before-like" />
+          <Icon src={BeforeLike} />
         </div>
         <div className="text-black text-[2rem]">
           01 <span className="text-2xl text-[#A2A3B1]">/05</span>
@@ -36,14 +29,8 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between gap-20">
-          <SmallArrowButton
-            arrowButton={BackSmallArrowButton}
-            alt="No button"
-          />
-          <SmallArrowButton
-            arrowButton={ForwardSmallArrowButton}
-            alt="No button"
-          />
+          <Icon src={BackSmallArrowButton} className="size-6" />
+          <Icon src={ForwardSmallArrowButton} className="size-6" />
         </div>
       </div>
 
