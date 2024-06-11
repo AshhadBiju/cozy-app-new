@@ -3,7 +3,7 @@ import Counter from "@/components/Counter";
 import Image from "next/image";
 const ProductItem = ({ imageUrl, title, color, price }) => {
   return (
-    <div className="flex justify-between pb-8 w-full max-h-48">
+    <div className="flex justify-between pb-8 w-full max-h-48 border-b-2 border-[#D1D1D8]">
       <div className="flex gap-0 md:gap-9">
         <div>
           <Image src={imageUrl} />

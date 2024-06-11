@@ -26,7 +26,7 @@ export default function Cart() {
     },
   ];
   return (
-    <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
+    <main className="container mx-auto px-4 bg-white h-full mt-[2rem] md:mt-[3.375rem] mb-0 md:mb-[2rem]">
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">

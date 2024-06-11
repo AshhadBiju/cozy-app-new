@@ -14,15 +14,8 @@ const paymentCards = [
 ];
 
 export default function Payment() {
-  const [currentStep, setCurrentStep] = useState(0);
-  const NUMBER_OF_STEPS = 5;
-  const goToNextStep = () =>
-    setCurrentStep((prev) => (prev === NUMBER_OF_STEPS - 1 ? prev : prev + 1));
-  const goToPreviousStep = () =>
-    setCurrentStep((prev) => (prev <= 0 ? prev : prev - 1));
-
   return (
-    <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
+    <main className="container mx-auto px-4 bg-white h-full mt-[2rem] md:mt-[3.375rem] mb-0 md:mb-[2rem]">
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">

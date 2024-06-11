@@ -16,7 +16,7 @@ const PaymentCard = ({
             className="h-4 w-4 bg-green-500 ring-green-500 text-green-600 border-gray-300 rounded"
           />
           <Image src={paymentCardImg} width={24} height={17} className="ml-3" />
-          <div className="text-base text-[#CAD2DB] flex">
+          <div className="text-base text-textSecondary flex">
             <div className="text-[#17183B] font-bold ml-4 mr-10">
               {cardNumber}
             </div>
