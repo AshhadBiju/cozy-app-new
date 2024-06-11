@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import ProductItem from "@/components/ProductItem";
-import Button from "@/components/UIComponents/Button";
+import plus from "@images/icons/plus.svg";
 import OrderCard from "@/components/OrderCard";
 import AddressCard from "@/components/AddressCard";
-import Stepper from "@/components/Stepper";
-const currentStep = 1;
+import Icon from "@/components/UIComponents/Icon";
 
 export default function Cart() {
   return (
@@ -14,10 +11,6 @@ export default function Cart() {
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
-            <div className="">
-              <Stepper currentStep={currentStep} />
-            </div>
-
             <div className="flex flex-col justify-between pb-8 w-full">
               <AddressCard
                 name="Huzefa Bagwala"
@@ -33,10 +26,13 @@ export default function Cart() {
                   place="HOME"
                 />
               </div>
-              {/* <button className="flex items-center gap-4 text-primary ml-[4.75rem] mt-[2.125rem]">
-                Add New Address
-              </button> */}
-              <Button buttonText="Add New Address" />
+              <button className="mt-[2.125rem]">
+                <Icon
+                  src={plus}
+                  text="Add New Address"
+                  textClassName="text-primary"
+                />
+              </button>
             </div>
           </div>
           <div>

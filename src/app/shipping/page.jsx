@@ -37,6 +37,7 @@ export default function Cart() {
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
+            {/**Stepper Component */}
             <div>
               <Stepper
                 currentStep={currentStep}

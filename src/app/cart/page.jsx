@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import React from "react";
 import OsmondArmchair from "@/public/images/OsmondArmchair.svg";
 import ProductItem from "@/components/ProductItem";
@@ -5,6 +7,11 @@ import OrderCard from "@/components/OrderCard";
 import percent from "@/public/images/percent.svg";
 import Icon from "@/components/UIComponents/Icon";
 export default function Cart() {
+  const [cart, setCartItems] = useState({
+    noOfItems: 2,
+    cartDiscountMessage:
+      "10% Instant Discount with Federal Bank Debit Cards on a min spend of $150. TCA",
+  });
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[3.375rem] mb-[3.5rem]">
       <section>
@@ -12,8 +19,9 @@ export default function Cart() {
           <div className="w-full">
             <div className="flex gap-6 items-center mb-[3.75rem]">
               <div className="text-[2rem] text-[#17183B] font-bold">Cart</div>
-              <div className="text-xl text-[#A2A3B1] font-semibold">
-                2 items
+              <div className="text-xl text-[#A2A3B1] font-semibold flex space-x-2">
+                <span>{cart.noOfItems}</span>
+                <span>Items</span>
               </div>
             </div>
             <div className="border-b-2 border-[#D1D1D8]">
@@ -34,14 +42,11 @@ export default function Cart() {
               />
             </div>
 
-            <div className="flex p-5 gap-3 border-2 border-[#3AA39F] rounded mt-9 bg-[#3AA39F] bg-opacity-10">
+            <div className="flex p-5 gap-3 border-2 border-primary rounded mt-9 bg-primary bg-opacity-10">
               <div>
                 <Icon src={percent} />
               </div>
-              <div className="text-[#17183B]">
-                10% Instant Discount with Federal Bank Debit Cards on a min
-                spend of $150. TCA
-              </div>
+              <div className="text-[#17183B]">{cart.cartDiscountMessage}</div>
             </div>
           </div>
           <div>

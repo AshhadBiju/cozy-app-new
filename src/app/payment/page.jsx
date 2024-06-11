@@ -6,7 +6,8 @@ import OrderCard from "@/components/OrderCard";
 import VisaCard from "@/public/images/visa.svg";
 import MasterCard from "@/public/images/mastercard.svg";
 import PaymentCard from "@/components/paymentCard";
-import AddToWishlistButton from "@/components/AddToWishlistButton";
+import plus from "@images/icons/plus.svg";
+import Icon from "@/components/UIComponents/Icon";
 
 const paymentCards = [
   { paymentCardImg: VisaCard, expiryDate: "12/2022", cardNumber: "****6754" },
@@ -26,7 +27,8 @@ export default function Payment() {
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
-            <div className="">
+            {/**Stepper */}
+            {/* <div>
               <div>
                 <Stepper
                   currentStep={currentStep}
@@ -48,7 +50,7 @@ export default function Payment() {
                   </button>
                 </section>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex flex-col justify-between pb-8 w-full">
               <div className="font-bold mb-6 text-xl">Payment Method</div>
@@ -63,9 +65,13 @@ export default function Payment() {
                   </div>
                 ))}
               </div>
-              <div className="mt-[2.125rem]">
-                <AddToWishlistButton addToText="Add Payment Method" />
-              </div>
+              <button className="mt-[2.125rem]">
+                <Icon
+                  src={plus}
+                  text="Add Payment"
+                  textClassName="text-primary"
+                />
+              </button>
             </div>
           </div>
           <div>

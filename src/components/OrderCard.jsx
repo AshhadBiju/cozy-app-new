@@ -24,38 +24,38 @@ export default function OrderCard() {
       <div className="top-group border-b-2 border-[#D1D1D8] py-8">
         <div className="flex justify-between mb-6">
           <div>Price</div>
-          <div>
+          <div className="space-x-1">
             <span>$</span>
-            {orderCard.price}
+            <span>{orderCard.price}</span>
           </div>
         </div>
         <div className="flex justify-between mb-6">
           <div>Discount</div>
-          <div>
+          <div className="space-x-1">
             <span>$</span>
-            {orderCard.discount}
+            <span>{orderCard.discount}</span>
           </div>
         </div>
         <div className="flex justify-between mb-6">
           <div>Shipping</div>
-          <div className="">
+          <div>
             <span>{orderCard.shipping}</span>
           </div>
         </div>
         <div className="flex justify-between">
           <div>Coupon Applied</div>
-          <div>
+          <div className="space-x-1">
             <span>$</span>
-            {orderCard.couponApplied}
+            <span>{orderCard.couponApplied}</span>
           </div>
         </div>
       </div>
       <div className="pt-8">
         <div className="flex justify-between mb-6">
           <div>TOTAL</div>
-          <div>
+          <div className="space-x-1">
             <span>$</span>
-            {orderCard.total}
+            <span>{orderCard.total}</span>
           </div>
         </div>
         <div className="flex justify-between mb-6 text-base">
