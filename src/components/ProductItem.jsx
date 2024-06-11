@@ -13,7 +13,7 @@ const ProductItem = ({ imageUrl, title, color, price }) => {
             <div className="text-xl font-semibold text-[#17183B]">{title}</div>
           </div>
 
-          <div className="mt-4 mb-7 text-[#A2A3B1] font-semibold space-x-2">
+          <div className="mt-4 mb-7 text-textSecondary font-semibold space-x-2">
             <span>Color</span>
             <span className="text-[#17183B]">{color}</span>
           </div>
