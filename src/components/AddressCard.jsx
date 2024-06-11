@@ -24,9 +24,9 @@ const AddressCard = ({
           </div>
         </div>
       </label>
-      <div className="text-[#17183B] font-semibold gap-4">
-        <button className="mr-6">Edit</button>
-        <button className="text-[#ed2939] ml-6">Remove</button>
+      <div className="text-[#17183B] font-semibold flex gap-4 flex-col md:flex-row">
+        <button className="">Edit</button>
+        <button className="text-[#ed2939]">Remove</button>
       </div>
     </div>
   );

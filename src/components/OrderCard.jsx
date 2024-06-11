@@ -21,7 +21,7 @@ export default function OrderCard() {
   return (
     <div className="order-card border p-8 max-w-full md:w-[23.75rem]">
       <h2 className="font-bold">Order Summary</h2>
-      <div className="top-group border-b-2 border-[#D1D1D8] py-8">
+      <div className="top-group border-b-2 border-[#D1D1D8] py-2 md:py-8">
         <div className="flex justify-between mb-6">
           <div>Price</div>
           <div className="space-x-1">

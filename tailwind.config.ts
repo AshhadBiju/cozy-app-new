@@ -18,6 +18,8 @@ const config: Config = {
       colors: {
         primary: "#3AA39F",
         primaryHover: "#318a87",
+        textPrimary: "",
+        textSecondary: "#A2A3B1",
       },
     },
   },

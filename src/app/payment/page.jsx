@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Stepper from "@/components/Stepper";
 import { useState } from "react";
 import OrderCard from "@/components/OrderCard";
 import VisaCard from "@/public/images/visa.svg";
@@ -27,31 +26,6 @@ export default function Payment() {
       <section>
         <div className="flex flex-col md:flex-row justify-between md:gap-20 gap-0">
           <div className="w-full">
-            {/**Stepper */}
-            {/* <div>
-              <div>
-                <Stepper
-                  currentStep={currentStep}
-                  numberOfSteps={NUMBER_OF_STEPS}
-                />
-                <br />
-                <section className="flex gap-10">
-                  <button
-                    onClick={goToPreviousStep}
-                    className="bg-blue-600 text-white p-2 rounded-md"
-                  >
-                    Previous step
-                  </button>
-                  <button
-                    onClick={goToNextStep}
-                    className="bg-blue-600 text-white p-2 rounded-md"
-                  >
-                    Next step
-                  </button>
-                </section>
-              </div>
-            </div> */}
-
             <div className="flex flex-col justify-between pb-8 w-full">
               <div className="font-bold mb-6 text-xl">Payment Method</div>
               <div>
