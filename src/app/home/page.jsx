@@ -9,7 +9,7 @@ export default function Hero() {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="relative z-10 flex h-full items-center justify-center">
+        <div className="relative z-10 flex h-full items-center justify-center p-6">
           <h1 className="text-4xl font-bold text-white md:text-6xl">
             <span className="italic text-primary"> Cozy</span>, your one stop
             shop for your home
@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </section>
       <section className="py-16 px-8 md:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <div>
             <h2 className="text-2xl font-bold mb-4">Our Products</h2>
             <p className="mb-4">

@@ -5,7 +5,7 @@ import OrderCard from "@components/OrderCard";
 import AddressCard from "@components/AddressCard";
 import Icon from "@components/UIComponents/Icon";
 
-export default function Cart() {
+export default function Address() {
   const [addresses, setAddresses] = useState([
     {
       id: 1,
@@ -42,7 +42,7 @@ export default function Cart() {
             <div className="border-[#D1D1D8] border-t-2 mt-8"></div>
             <button className="my-8">
               <Icon
-                src={plus}
+                name="plus"
                 text="Add New Address"
                 textClassName="text-primary"
               />

@@ -4,7 +4,7 @@ import Select from "react-select";
 import OrderCard from "@components/OrderCard";
 import ShippingMethod from "@components/shipmentMethod";
 
-export default function Cart() {
+export default function Shipping() {
   const [options, setOptions] = useState([
     { value: "option1", label: "Select date" },
     { value: "option2", label: "Option 2" },
