@@ -1,18 +1,17 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 import OrderCard from "@components/OrderCard";
 import ShippingMethod from "@components/shipmentMethod";
 
 export default function Cart() {
-  const options = [
+  const [options, setOptions] = useState([
     { value: "option1", label: "Select date" },
     { value: "option2", label: "Option 2" },
     { value: "option3", label: "Option 3" },
-  ];
+  ]);
 
-  const shippingMethods = [
+  const [shippingMethods, setshippingMethods] = useState([
     {
       shippingMethod: "Regular Shipping",
       date: "01 Feb, 2023",
@@ -23,7 +22,8 @@ export default function Cart() {
       date: "28 Jan, 2023",
       freeOrNot: "$8.50",
     },
-  ];
+  ]);
+
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[2rem] md:mt-[3.375rem] mb-0 md:mb-[2rem]">
       <section>

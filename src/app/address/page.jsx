@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import plus from "@images/icons/plus.svg";
 import OrderCard from "@components/OrderCard";
 import AddressCard from "@components/AddressCard";

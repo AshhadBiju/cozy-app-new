@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import OsmondArmchair from "@images/products/OsmondArmchair.png";
 import ProductItem from "@components/ProductItem";
 import OrderCard from "@components/OrderCard";

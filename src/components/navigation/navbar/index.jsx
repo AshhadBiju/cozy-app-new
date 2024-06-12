@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-// import searchButton from "@images/headerButtons/searchButton.svg";
-// import menuButton from "@images/headerButtons/menuButton.svg";
-// import shoppingCartButton from "@images/headerButtons/shoppingCartButton.svg";
 import Icon from "@components/UIComponents/Icon";
 
 const Navbar = () => {

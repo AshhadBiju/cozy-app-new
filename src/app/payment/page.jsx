@@ -1,19 +1,21 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import OrderCard from "@components/OrderCard";
 import VisaCard from "@images/visa.svg";
 import MasterCard from "@images/mastercard.svg";
 import PaymentCard from "@components/paymentCard";
-import plus from "@images/icons/plus.svg";
 import Icon from "@components/UIComponents/Icon";
 
-const paymentCards = [
-  { paymentCardImg: VisaCard, expiryDate: "12/2022", cardNumber: "****6754" },
-  { paymentCardImg: MasterCard, expiryDate: "06/2021", cardNumber: "****5732" },
-];
-
 export default function Payment() {
+  const [paymentCards, setPaymentCards] = useState([
+    { paymentCardImg: VisaCard, expiryDate: "12/2022", cardNumber: "****6754" },
+    {
+      paymentCardImg: MasterCard,
+      expiryDate: "06/2021",
+      cardNumber: "****5732",
+    },
+  ]);
+
   return (
     <main className="container mx-auto px-4 bg-white h-full mt-[2rem] md:mt-[3.375rem] mb-0 md:mb-[2rem]">
       <section>
@@ -34,7 +36,7 @@ export default function Payment() {
               </div>
               <button className="mt-[2.125rem]">
                 <Icon
-                  src={plus}
+                  name="plus"
                   text="Add Payment"
                   textClassName="text-primary"
                 />

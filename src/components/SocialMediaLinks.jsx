@@ -1,10 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-// import fb from "@images/socialMediaIcons/fb.svg";
-// import pinterest from "@images/socialMediaIcons/pinterest.svg";
-// import insta from "@images/socialMediaIcons/insta.svg";
-// import twitter from "@images/socialMediaIcons/twitter.svg";
 import Icon from "@components/UIComponents/Icon";
 
 const socialMediaLinks = [
