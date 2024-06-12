@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 export default function Icon({
-  src,
+  // src,
+  name,
   height = 24,
   width = 24,
   alt = "Icon",
@@ -12,7 +13,8 @@ export default function Icon({
   return (
     <div className="flex items-center gap-2">
       <Image
-        src={src}
+        // src={src}
+        src={`./images/icons/${name}.svg`}
         width={width}
         height={height}
         alt={alt}

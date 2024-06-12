@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import searchButton from "@images/headerButtons/searchButton.svg";
-import menuButton from "@images/headerButtons/menuButton.svg";
-import shoppingCartButton from "@images/headerButtons/shoppingCartButton.svg";
-import Icon from "@/components/UIComponents/Icon";
+// import searchButton from "@images/headerButtons/searchButton.svg";
+// import menuButton from "@images/headerButtons/menuButton.svg";
+// import shoppingCartButton from "@images/headerButtons/shoppingCartButton.svg";
+import Icon from "@components/UIComponents/Icon";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,17 +42,17 @@ const Navbar = () => {
             <ul className="md:flex gap-x-6 text-black">
               <li className="md:block hidden">
                 <Link href="/search">
-                  <Icon src={searchButton} />
+                  <Icon name="searchButton" />
                 </Link>
               </li>
               <li className="md:block hidden ">
                 <Link href="/cart">
-                  <Icon src={shoppingCartButton} />
+                  <Icon name="shoppingCartButton" />
                 </Link>
               </li>
               <li className="md:hidden block">
                 <button onClick={toggleSidebar}>
-                  <Icon src={menuButton} />
+                  <Icon src="menuButton" />
                 </button>
               </li>
             </ul>

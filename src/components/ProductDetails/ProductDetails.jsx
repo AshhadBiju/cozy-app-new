@@ -4,7 +4,6 @@ import Counter from "@components/Counter";
 import Button from "@components/UIComponents/Button";
 import ColorSelector from "@components/colorSelector";
 import SocialMediaLinks from "@components/SocialMediaLinks";
-import BeforeLike from "@images/icons/before-like.svg";
 import Icon from "@components/UIComponents/Icon";
 
 export default function ProductDetails() {
@@ -54,7 +53,7 @@ export default function ProductDetails() {
       </ul>
       <div className="flex justify-between">
         <Icon
-          src={BeforeLike}
+          name={"before-like"}
           text="Add to wishlist"
           textClassName="text-primary"
         />

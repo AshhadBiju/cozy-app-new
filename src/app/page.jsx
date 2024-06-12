@@ -1,9 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import ProductDetails from "@components/ProductDetails/ProductDetails";
-import BackArrowButton from "@images/icons/backArrowButton.svg";
-import BackSmallArrowButton from "@images/icons/backSmallArrowButton.svg";
-import ForwardSmallArrowButton from "@images/icons/forwardSmallArrowButton.svg";
 import Icon from "@components/UIComponents/Icon";
 import SwiperCarousel from "@components/SwiperCarousel";
 import { APIBASEURL } from "@/src/config/apiConfigs";
@@ -20,7 +17,7 @@ export default function Home() {
     <main className="container mx-auto px-8 bg-white max-h-screen mt-[2rem] mb-[3rem]">
       <div className="flex justify-between mb-3">
         <div>
-          <Icon src={BackArrowButton} />
+          <Icon name="backArrowButton" />
         </div>
         <div className="text-black text-[2rem]">
           01 <span className="text-2xl text-textSecondary">/05</span>
@@ -32,8 +29,8 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between gap-20">
-          <Icon src={BackSmallArrowButton} className="size-4" />
-          <Icon src={ForwardSmallArrowButton} className="size-4" />
+          <Icon name="backSmallArrowButton" className="size-4" />
+          <Icon name="forwardSmallArrowButton" className="size-4" />
         </div>
       </div>
 

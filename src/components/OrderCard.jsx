@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import TrailingIcon from "@images/icons/trailingIcon.svg";
 import Button from "@components/UIComponents/Button";
 import Icon from "@components/UIComponents/Icon";
 
@@ -65,7 +64,7 @@ export default function OrderCard() {
             className="outline-none max-w-fit text-base"
             placeholder="Coupon code"
           />
-          <Icon src={TrailingIcon} />
+          <Icon name="trailingIcon" />
         </div>
         <div>
           <Button
