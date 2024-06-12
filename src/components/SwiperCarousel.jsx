@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import { slides } from "@/lib/slides";
+import { slides } from "@/src/lib/slides";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -56,7 +56,7 @@ export default function Slides() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className="block h-[104px] w-[104px] border border-[D1D1D8] rounded-lg p-2"
+                  className=" h-[104px] w-[104px] border border-[D1D1D8] rounded-lg p-2 inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer"
                 />
               </button>
             </SwiperSlide>

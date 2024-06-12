@@ -1,13 +1,13 @@
 "use client";
 import { useEffect } from "react";
-import ProductDetails from "@/components/ProductDetails/ProductDetails";
-import BackArrowButton from "@/public/images/icons/backArrowButton.svg";
-import BackSmallArrowButton from "@/public/images/backSmallArrowButton.svg";
-import ForwardSmallArrowButton from "@/public/images/forwardSmallArrowButton.svg";
-import Icon from "@/components/UIComponents/Icon";
-import SwiperCarousel from "@/app/swiper/swiperCarousel";
-import { APIBASEURL } from "@/config/apiConfigs";
-import ProductEndpoints from "@/API/products/index";
+import ProductDetails from "@components/ProductDetails/ProductDetails";
+import BackArrowButton from "@images/icons/backArrowButton.svg";
+import BackSmallArrowButton from "@images/icons/backSmallArrowButton.svg";
+import ForwardSmallArrowButton from "@images/icons/forwardSmallArrowButton.svg";
+import Icon from "@components/UIComponents/Icon";
+import SwiperCarousel from "@components/SwiperCarousel";
+import { APIBASEURL } from "@/src/config/apiConfigs";
+import ProductEndpoints from "@/src/API/products/index";
 
 export default function Home() {
   useEffect(() => {

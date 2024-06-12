@@ -5,7 +5,7 @@ const ShippingMethod = ({
 }) => {
   return (
     <div className="flex items-center justify-between border px-6 py-4">
-      <label htmlFor="nextDay">
+      <label className="cursor-pointer">
         <div className="flex items-center">
           <input type="radio" name="shipmentMethod" />
           <div className="ml-2 text-base">

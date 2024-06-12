@@ -11,6 +11,11 @@
 .mySwiper .swiper-slide {
   opacity: 0.4;
 }
+.mySwiper .swiper-slide:hover {
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }

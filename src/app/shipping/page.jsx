@@ -2,9 +2,8 @@
 import React from "react";
 import { useState } from "react";
 import Select from "react-select";
-import OrderCard from "@/components/OrderCard";
-import ShippingMethod from "@/components/shipmentMethod";
-import Stepper from "@/components/Stepper";
+import OrderCard from "@components/OrderCard";
+import ShippingMethod from "@components/shipmentMethod";
 
 export default function Cart() {
   const options = [

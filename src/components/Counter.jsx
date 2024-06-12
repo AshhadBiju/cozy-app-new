@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import PlusSign from "@/public/images/icons/plus.svg";
-import MinusSign from "@/public/images/icons/minus.svg";
+import PlusSign from "@images/icons/plus.svg";
+import MinusSign from "@images/icons/minus.svg";
 
 const Counter = () => {
   const [count, setCount] = useState(0);

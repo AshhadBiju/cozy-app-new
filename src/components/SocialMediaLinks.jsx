@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import fb from "@/public/images/socialMediaIcons/fb.svg";
-import pinterest from "@/public/images/socialMediaIcons/pinterest.svg";
-import insta from "@/public/images/socialMediaIcons/insta.svg";
-import twitter from "@/public/images/socialMediaIcons/twitter.svg";
+import fb from "@images/socialMediaIcons/fb.svg";
+import pinterest from "@images/socialMediaIcons/pinterest.svg";
+import insta from "@images/socialMediaIcons/insta.svg";
+import twitter from "@images/socialMediaIcons/twitter.svg";
 
 const socialMediaLinks = [
   { href: "/facebook", src: fb },

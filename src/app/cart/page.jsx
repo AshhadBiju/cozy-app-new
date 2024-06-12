@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import OsmondArmchair from "@/public/images/OsmondArmchair.svg";
-import ProductItem from "@/components/ProductItem";
-import OrderCard from "@/components/OrderCard";
-import percent from "@/public/images/percent.svg";
-import Icon from "@/components/UIComponents/Icon";
+import OsmondArmchair from "@images/products/OsmondArmchair.png";
+import ProductItem from "@components/ProductItem";
+import OrderCard from "@components/OrderCard";
+import percent from "@images/icons/percent.svg";
+import Icon from "@components/UIComponents/Icon";
 export default function Cart() {
   const [cart, setCartItems] = useState({
     noOfItems: 2,

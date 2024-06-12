@@ -1,12 +1,9 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import Image from "next/image";
-import TrailingIcon from "@/public/images/trailingIcon.svg";
-// import AddToCartButton from "../components/AddToCartButton";
-import Link from "next/link";
-import Button from "./UIComponents/Button";
-import Icon from "./UIComponents/Icon";
+import TrailingIcon from "@images/icons/trailingIcon.svg";
+import Button from "@components/UIComponents/Button";
+import Icon from "@components/UIComponents/Icon";
 
 export default function OrderCard() {
   const [orderCard, setOrderCard] = useState({
@@ -74,7 +71,7 @@ export default function OrderCard() {
           <Button
             buttonText="Proceed to Checkout"
             onClick={() => alert("Going to Checkout !")}
-            className=""
+            className="w-full"
             buttonColors="primary"
           />
         </div>

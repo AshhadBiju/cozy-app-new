@@ -19,8 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@images/*": ["./src/public/images/*"]
+      "@/*": ["./*"],
+      "@images/*": ["./public/images/*"],
+      "@components/*": ["./src/components/*"]
+      // "@src/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules"],

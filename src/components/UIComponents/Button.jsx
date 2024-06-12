@@ -16,12 +16,12 @@ const Button = ({
   const buttonColorsDefault = {
     primary: "bg-primary hover:bg-primaryHover",
   };
-
+  //text-white text-md rounded-[0.25rem] flex items-center justify-center
+  //w-full transition-colors overflow-hidden transform duration-200 ease-in-out
   return (
     <button
       onClick={onClick} // onClick, to be changed in the page it's used for, like alert, submit etc
-      className={` text-white text-md rounded-[0.25rem] flex items-center justify-center  
-      w-full transition-colors duration-200 ${buttonSizes[size]} ${className}
+      className={`text-white text-md rounded-[0.25rem] items-center justify-center p-4 overflow-hidden inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer ${buttonSizes[size]} ${className}
        ${buttonColorsDefault[buttonColors]}`}
     >
       {buttonText}

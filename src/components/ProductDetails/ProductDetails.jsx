@@ -1,14 +1,11 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
-import Counter from "@/components/Counter";
-import Button from "@/components/UIComponents/Button";
-import ColorSelector from "@/components/colorSelector";
-import AddToWishlistButton from "@/components/AddToWishlistButton";
-import SocialMediaLinks from "@/components/SocialMediaLinks";
-import BeforeLike from "@/public/images/icons/before-like.svg";
-import MerylLoungeChairTeal from "@/public/images/MerylLoungeChairTeal.svg";
-import Icon from "@/components/UIComponents/Icon";
+import Counter from "@components/Counter";
+import Button from "@components/UIComponents/Button";
+import ColorSelector from "@components/colorSelector";
+import SocialMediaLinks from "@components/SocialMediaLinks";
+import BeforeLike from "@images/icons/before-like.svg";
+import Icon from "@components/UIComponents/Icon";
 
 export default function ProductDetails() {
   const [product, setProduct] = useState({

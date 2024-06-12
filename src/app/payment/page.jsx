@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import OrderCard from "@/components/OrderCard";
-import VisaCard from "@/public/images/visa.svg";
-import MasterCard from "@/public/images/mastercard.svg";
-import PaymentCard from "@/components/paymentCard";
+import OrderCard from "@components/OrderCard";
+import VisaCard from "@images/visa.svg";
+import MasterCard from "@images/mastercard.svg";
+import PaymentCard from "@components/paymentCard";
 import plus from "@images/icons/plus.svg";
-import Icon from "@/components/UIComponents/Icon";
+import Icon from "@components/UIComponents/Icon";
 
 const paymentCards = [
   { paymentCardImg: VisaCard, expiryDate: "12/2022", cardNumber: "****6754" },
