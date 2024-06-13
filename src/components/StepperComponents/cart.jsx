@@ -70,7 +70,7 @@ export default function Cart() {
 
             <div className="flex p-5 gap-3 border-2 border-primary rounded mt-9 bg-primary bg-opacity-10">
               <div>
-                <Icon src={percent} />
+                <Icon name="percent" />
               </div>
               <div className="text-[#17183B]">{cart.cartDiscountMessage}</div>
             </div>
