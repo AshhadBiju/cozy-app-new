@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import OsmondArmchair from "@images/products/OsmondArmchair.png";
 import ProductItem from "@components/ProductItem";
 import OrderCard from "@components/OrderCard";
-import percent from "@images/icons/percent.svg";
 import Icon from "@components/UIComponents/Icon";
 export default function Cart() {
   const [cart, setCartItems] = useState({
@@ -67,7 +66,7 @@ export default function Cart() {
                 price="169.99"
               />
             </div> */}
-
+            <div className=" border-b-2 border-[#D1D1D8]"></div>
             <div className="flex p-5 gap-3 border-2 border-primary rounded mt-9 bg-primary bg-opacity-10">
               <div>
                 <Icon name="percent" />

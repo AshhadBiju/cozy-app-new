@@ -2,44 +2,73 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Pagination } from "swiper/modules";
 import { slides } from "@/src/lib/slides";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import "swiper/css/pagination";
 
 export default function Slides() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section className="py-12 w-[844px] ">
-      <div className="container">
+    <section className="py-12 w-full">
+      <div>
         <Swiper
           loop={true}
-          spaceBetween={10}
+          spaceBetween={20}
+          slidesPerView={4}
+          navigation={true}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
           thumbs={{
             swiper:
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className="h-[469px] rounded-lg z-10"
+          breakpoints={{
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[FreeMode, Navigation, Thumbs, Pagination]}
+          className="h-[469px] rounded-lg z-10 w-full"
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className="flex h-full w-full items-center justify-center ">
+              <div className="flex h-full w-full items-center justify-center flex-col gap-4 ">
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className="block h-full w-full"
+                  className="block h-[296px] w-full"
                 />
-                <div className="lg:min-w-[25.5rem] md:min-w-[25.5rem] min-w-0 h-[15.625rem] bg-gradient-to-r from-white to-teal-100 hidden md:block overflow-hidden"></div>
+                <div className="text-xl font-medium">{image.productName}</div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
         {/**Thumbnail */}
-        <Swiper
+        {/* <Swiper
           onSwiper={setThumbsSwiper}
           loop={true}
           spaceBetween={12}
@@ -60,7 +89,7 @@ export default function Slides() {
               </button>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </div>
     </section>
   );

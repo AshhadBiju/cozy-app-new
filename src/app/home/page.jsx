@@ -1,3 +1,4 @@
+import Swiper from "@components/SwiperCarouselHome";
 export default function Hero() {
   return (
     <main>
@@ -17,7 +18,7 @@ export default function Hero() {
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </section>
-      <section className="py-16 px-8 md:px-16">
+      {/* <section className="py-16 px-8 md:px-16">
         <div className="flex flex-col md:flex-row gap-8">
           <div>
             <h2 className="text-2xl font-bold mb-4">Our Products</h2>
@@ -47,6 +48,12 @@ export default function Hero() {
               home needs. Shop with us and experience the difference.
             </p>
           </div>
+        </div>
+      </section> */}
+      <section className="py-16 px-8 md:px-16 w-full">
+        <h1 className="text-4xl">Trending Products</h1>
+        <div>
+          <Swiper />
         </div>
       </section>
     </main>

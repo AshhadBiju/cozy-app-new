@@ -20,6 +20,21 @@
   opacity: 1;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3aa39f !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #318a87 !important;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+.swiper-pagination-bullet-active {
+  background: #3aa39f !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

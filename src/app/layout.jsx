@@ -19,10 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cambay.className}>
-        <Provider>
-          <Navigation />
-          {children}
-        </Provider>
+        {/* <Provider> */}
+        <Navigation />
+        {children}
+        {/* </Provider> */}
       </body>
     </html>
   );
