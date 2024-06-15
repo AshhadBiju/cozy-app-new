@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs, Pagination } from "swiper/modules";
@@ -13,6 +14,7 @@ import "swiper/css/pagination";
 
 export default function Slides() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <section className="py-12 w-full">
       <div>
@@ -56,40 +58,20 @@ export default function Slides() {
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
-              <div className="flex h-full w-full items-center justify-center flex-col gap-4 ">
+              <Link
+                href="/"
+                className="flex h-full w-full items-center justify-center flex-col gap-4 "
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   className="block h-[296px] w-full"
+                  title={image.productName}
                 />
-                <div className="text-xl font-medium">{image.productName}</div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
-        {/**Thumbnail */}
-        {/* <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={true}
-          spaceBetween={12}
-          slidesPerView={5}
-          freeMode={true}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
-          className="thumbs mt-3 h-full w-[616px] rounded-lg mySwiper"
-        >
-          {slides.map((image, index) => (
-            <SwiperSlide key={index}>
-              <button className="flex h-full w-full items-center justify-center">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className=" h-[104px] w-[104px] border border-[D1D1D8] rounded-lg p-2 inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer"
-                />
-              </button>
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
       </div>
     </section>
   );
