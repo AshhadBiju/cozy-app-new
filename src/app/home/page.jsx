@@ -1,4 +1,8 @@
+import Button from "@/src/components/UIComponents/Button";
+import Icon from "@/src/components/UIComponents/Icon";
 import Swiper from "@components/SwiperCarouselHome";
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <main>
@@ -18,43 +22,15 @@ export default function Hero() {
         </div>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </section>
-      {/* <section className="py-16 px-8 md:px-16">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Our Products</h2>
-            <p className="mb-4">
-              At Cozy, we offer a wide range of products to make your home
-              comfortable and stylish. From furniture to home decor, our
-              collection is curated to provide you with the best options for
-              your home.
-            </p>
-            <p className="mb-4">
-              Explore our selection of sofas, beds, dining tables, and more.
-              Each piece is designed with quality and comfort in mind, ensuring
-              that your home looks and feels just the way you want it.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
-            <p className="mb-4">
-              Our commitment to quality and customer satisfaction sets us apart.
-              We believe that your home should be a reflection of your
-              personality and style, and we strive to provide products that help
-              you achieve that vision.
-            </p>
-            <p className="mb-4">
-              With exceptional customer service, competitive prices, and a vast
-              selection of products, Cozy is your go-to destination for all your
-              home needs. Shop with us and experience the difference.
-            </p>
-          </div>
-        </div>
-      </section> */}
+
       <section className="py-16 px-8 md:px-16 w-full">
         <h1 className="text-4xl">Trending Products</h1>
         <div>
           <Swiper />
         </div>
+        <Link href="/products">
+          <Icon text="See more" />
+        </Link>
       </section>
     </main>
   );

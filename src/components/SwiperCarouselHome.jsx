@@ -54,7 +54,7 @@ export default function Slides() {
             },
           }}
           modules={[FreeMode, Navigation, Thumbs, Pagination]}
-          className="h-[469px] rounded-lg z-10 w-full"
+          className=" rounded-lg z-10 w-full"
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
@@ -65,7 +65,7 @@ export default function Slides() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className="block h-[296px] w-full"
+                  className="block h-96 w-full"
                   title={image.productName}
                 />
               </Link>

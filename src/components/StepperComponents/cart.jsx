@@ -50,22 +50,7 @@ export default function Cart() {
                 </div>
               ))}
             </div>
-            {/* <div className="border-b-2 border-[#D1D1D8]">
-              <ProductItem
-                imageUrl={OsmondArmchair}
-                title="Osmond Armchair"
-                color="Gunnared biege"
-                price="149.99"
-              />
-            </div> */}
-            {/* <div className="mt-8">
-              <ProductItem
-                imageUrl={OsmondArmchair}
-                title="Meryl Lounge Chair"
-                color="Lysed bright green"
-                price="169.99"
-              />
-            </div> */}
+
             <div className=" border-b-2 border-[#D1D1D8]"></div>
             <div className="flex p-5 gap-3 border-2 border-primary rounded mt-9 bg-primary bg-opacity-10">
               <div>

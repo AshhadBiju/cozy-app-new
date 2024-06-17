@@ -13,7 +13,7 @@ import "swiper/css/thumbs";
 export default function Slides() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section className="py-12 w-[844px] ">
+    <section className="py-12 w-[52.75rem] ">
       <div className="container">
         <Swiper
           loop={true}
@@ -23,7 +23,7 @@ export default function Slides() {
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="h-[469px] rounded-lg z-10"
+          className="h-96 rounded-lg z-10"
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
@@ -42,12 +42,12 @@ export default function Slides() {
         <Swiper
           onSwiper={setThumbsSwiper}
           loop={true}
-          spaceBetween={12}
+          spaceBetween={0}
           slidesPerView={5}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="thumbs mt-3 h-full w-[616px] rounded-lg mySwiper"
+          className="thumbs mt-3 h-full w-3/4 rounded-lg mySwiper"
         >
           {slides.map((image, index) => (
             <SwiperSlide key={index}>
@@ -55,7 +55,7 @@ export default function Slides() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className=" h-[104px] w-[104px] border border-[D1D1D8] rounded-lg p-2 inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer"
+                  className=" size-24 border border-[D1D1D8] rounded-lg p-2 inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer"
                 />
               </button>
             </SwiperSlide>

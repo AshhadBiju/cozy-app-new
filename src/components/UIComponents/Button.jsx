@@ -6,7 +6,7 @@ const Button = ({
   onClick,
   className = "", // Additional custom classNames to style the button or styles to override the default one given below
   size = "md", // Default size of button
-  buttonColors = "",
+  buttonColors = "primary",
 }) => {
   const buttonSizes = {
     sm: "min-h-10 px-4",

@@ -11,14 +11,16 @@ export default function Icon({
 }) {
   return (
     <div className="flex items-center gap-2">
-      <Image
-        src={`./images/icons/${name}.svg`}
-        //Always put public in root, only then this will work. The URL structure should also be just like this
-        width={width}
-        height={height}
-        alt={alt}
-        className={className}
-      />
+      {name && (
+        <Image
+          src={`./images/icons/${name}.svg`}
+          //Always put public in root, only then this will work. The URL structure should also be just like this
+          width={width}
+          height={height}
+          alt={alt}
+          className={className}
+        />
+      )}
       <div className={textClassName}>{text}</div>
     </div>
   );
