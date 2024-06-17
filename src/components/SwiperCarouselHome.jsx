@@ -60,7 +60,7 @@ export default function Slides() {
             <SwiperSlide key={index}>
               <Link
                 href="/"
-                className="flex h-full w-full items-center justify-center flex-col gap-4 "
+                className="  h-full w-full items-center justify-center flex-col gap-4 inline-block transform transition duration-400 ease-in-out hover:scale-105 cursor-pointer"
               >
                 <Image
                   src={image.src}

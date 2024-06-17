@@ -28,8 +28,12 @@ export default function Hero() {
         <div>
           <Swiper />
         </div>
-        <Link href="/products">
-          <Icon text="See more" />
+
+        <Link
+          className="inline-block transform transition duration-400 ease-in-out hover:scale-105 hover:text-primaryHover cursor-pointer"
+          href="/products"
+        >
+          <Icon text="See more" textClassName="text-primary" />
         </Link>
       </section>
     </main>
