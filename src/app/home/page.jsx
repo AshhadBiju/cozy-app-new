@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <main>
+    <>
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -36,6 +36,6 @@ export default function Hero() {
           <Icon text="See more" textClassName="text-primary" />
         </Link>
       </section>
-    </main>
+    </>
   );
 }
