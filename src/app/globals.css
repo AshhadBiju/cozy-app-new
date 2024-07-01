@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 255 115 179;
+  --color-secondary: 111 114 185;
+}
+
+/*Swiper Carousel*/
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+.mySwiper .swiper-slide:hover {
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3aa39f !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #318a87 !important;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+.swiper-pagination-bullet-active {
+  background: #3aa39f !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
